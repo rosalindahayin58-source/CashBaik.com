@@ -17,7 +17,7 @@
 }
 
 html,body{ overflow-x:hidden; }
-body{ padding-top:56px; }
+body{ padding-top:70px; }
 
 body{
     background:var(--white);
@@ -33,17 +33,19 @@ img{ max-width:100%; height:auto; display:block; }
 ========================= */
 .navbar{
     width:100%;
-    padding:12px 8%;
+    height:70px;
+    padding:0 8%;
     display:flex;
     justify-content:space-between;
     align-items:center;
-    background:#fff;
     position:fixed;
     top:0;
     left:0;
-    right:0;
     z-index:9999;
+    background:rgba(255,255,255,0.95);
+    backdrop-filter:blur(10px);
     box-shadow:0 4px 20px rgba(0,0,0,.05);
+    transition:.3s ease;
 }
 
 .logo img{ height:25px; }
