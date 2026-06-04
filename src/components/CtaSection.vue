@@ -1,20 +1,36 @@
 <template>
   <section class="cta-section" id="mulai">
-    <h2>Mulai Belanja Lebih Hemat Hari Ini 🚀</h2>
+    <h2>Mulai Belanja Lebih Hemat Hari Ini <span class="rocket">🚀</span></h2>
     <p>
-      Dapatkan cashback dan promo terbaik dari berbagai merchant favoritmu hanya dalam satu platform..
+      Bergabunglah bersama 50.000+ pengguna yang sudah merasakan manfaat
+      cashback dari CashBaik setiap harinya.
     </p>
     <div class="cta-buttons">
-  <a href="https://cashbaik.com/" class="cta-button primary-cta" target="_blank" rel="noopener">
-    Kunjungi Website
-  </a>
-  <a href="https://play.google.com/store/apps/details?id=com.cashbaik.app&pcampaignid=web_share" class="cta-button secondary-cta" target="_blank" rel="noopener">
-    Download Sekarang
-  </a>
-</div>
+      <a href="https://cashbaik.com/" class="cta-button primary-cta" target="_blank" rel="noopener">
+        Kunjungi Website
+      </a>
+      <a href="https://play.google.com/store/apps/details?id=com.cashbaik.app&pcampaignid=web_share" class="cta-button secondary-cta" target="_blank" rel="noopener">
+        Download Sekarang
+      </a>
+    </div>
   </section>
 </template>
 
 <script setup>
 // No logic needed for static CTA
 </script>
+
+<style scoped>
+@keyframes rocketLaunch {
+  0%   { transform: translateY(0px) rotate(-45deg); }
+  30%  { transform: translateY(-12px) rotate(-45deg); }
+  60%  { transform: translateY(-6px) rotate(-45deg); }
+  100% { transform: translateY(0px) rotate(-45deg); }
+}
+
+.rocket {
+  display: inline-block;
+  animation: rocketLaunch 1.5s ease-in-out infinite;
+  transform-origin: center;
+}
+</style>
