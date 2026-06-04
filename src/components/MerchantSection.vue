@@ -47,7 +47,7 @@ const merchants = [
     name: 'Tokopedia',
     logo: '/merchants/tokopedia.png',
     cashback: 'Nikmati cashback hingga Rp 500.000 untuk transaksi pembayaran tertentu..',
-    url: '#',
+    url: 'https://www.tokopedia.com',
   },
   {
     name: 'Lazada',
