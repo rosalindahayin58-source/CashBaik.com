@@ -2,7 +2,7 @@
   <section class="merchant-section" id="merchant">
     <div class="section-header">
       <h2>Merchant Populer</h2>
-      <p>Belanja di ratusan merchant favorit dan nikmati cashback eksklusif.</p>
+      <p>Belanja di merchant favoritmu dan dapatkan cashback otomatis langsung masuk ke saldo CashBaik-mu!</p>
     </div>
 
     <div ref="splideEl" class="splide" aria-label="Merchant Populer">
