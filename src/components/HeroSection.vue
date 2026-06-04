@@ -1,0 +1,65 @@
+<template>
+  <section class="hero" id="beranda">
+    <div class="hero-container">
+      <!-- Left: Content -->
+      <div class="hero-content">
+        <div class="trust-badge">
+          <i class="fas fa-shield-alt"></i>
+          Dipercaya 50.000+ Pengguna
+        </div>
+
+        <h1>
+          Belanja Lebih Hemat <br />
+          <span>Bersama CashBaik</span>
+        </h1>
+
+        <p>
+          Dapatkan cashback dari berbagai merchant favorit seperti
+          Shopee, Tokopedia, Lazada dan marketplace populer lainnya.
+        </p>
+
+        <!-- Search / input box -->
+        <div class="action-box">
+          <div class="input-group">
+            <i class="fas fa-search search-icon"></i>
+            <input
+              v-model="productLink"
+              type="text"
+              placeholder="Tempel link produk di sini..."
+            />
+          </div>
+          <button id="checkBtn" @click="checkLink">Cek Cashback</button>
+        </div>
+
+        <!-- CTA buttons -->
+       <div class="hero-buttons">
+         <a href="https://cashbaik.com/" class="hero-btn primary-btn" target="_blank" rel="noopener">
+          Kunjungi Website
+        </a>
+         <a href="https://play.google.com/store/apps/details?id=com.cashbaik.app&pcampaignid=web_share" class="hero-btn secondary-btn" target="_blank" rel="noopener">
+            Download Aplikasi
+        </a>
+        </div>
+      </div>
+
+      <!-- Right: Illustration -->
+      <div class="hero-image">
+        <img src="@/assets/hero.png" alt="CashBaik Illustration" />
+      </div>
+    </div>
+  </section>
+</template>
+
+<script setup>
+import { ref } from 'vue'
+
+const productLink = ref('')
+
+function checkLink() {
+  if (!productLink.value.trim()) {
+    alert('Masukkan link produk terlebih dahulu!')
+    return
+  }
+  alert(`Mengecek cashback untuk: ${productLink.value}`)
+}
+</script>
