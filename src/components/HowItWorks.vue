@@ -2,7 +2,7 @@
   <section class="how-it-works" id="cara-kerja">
     <div class="section-header">
       <h2>Bagaimana Cara Kerja CashBaik?</h2>
-      <p>CashBaik adalah aplikasi yang dirancang untuk membantu Anda mengelola keuangan pribadi dengan mudah dan efisiensi.Berikut adalah cara kerja utama dari CashBaik.</p>
+      <p>CashBaik adalah aplikasi yang dirancang untuk membantu Anda mengelola keuangan pribadi dengan mudah dan efisiensi. Berikut adalah cara kerja utama dari CashBaik.</p>
     </div>
 
     <div ref="splideEl" class="splide" aria-label="Cara Kerja CashBaik">
