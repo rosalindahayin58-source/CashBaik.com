@@ -53,7 +53,7 @@ const merchants = [
     name: 'Lazada',
     logo: '/merchants/lazada.png',
     cashback: 'Pantau jadwal flash sale setiap harinya untuk mendapatkan barang dengan harga terendah dalam waktu terbatas.',
-    url: '#',
+    url: 'https://www.lazada.co.id',
   },
 ]
 
