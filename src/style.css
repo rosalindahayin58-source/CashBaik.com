@@ -17,6 +17,7 @@
 }
 
 html,body{ overflow-x:hidden; }
+body{ padding-top:56px; }
 
 body{
     background:var(--white);
@@ -37,9 +38,11 @@ img{ max-width:100%; height:auto; display:block; }
     justify-content:space-between;
     align-items:center;
     background:#fff;
-    position:sticky;
+    position:fixed;
     top:0;
-    z-index:1000;
+    left:0;
+    right:0;
+    z-index:9999;
     box-shadow:0 4px 20px rgba(0,0,0,.05);
 }
 
@@ -504,63 +507,94 @@ img{ max-width:100%; height:auto; display:block; }
 /* =========================
    MOBILE ≤ 600px
 ========================= */
-@media(max-width:600px){
+@media(max-width:768px){
 
-    .navbar{ position:relative; }
+    /* Hamburger tampil, nav-menu tersembunyi */
+    .hamburger{
+        display:flex !important;
+        align-items:center;
+        justify-content:center;
+        font-size:24px;
+        cursor:pointer;
+        color:var(--primary);
+        background:none;
+        border:none;
+        padding:6px 8px;
+        border-radius:8px;
+        z-index:10000;
+    }
+    .hamburger:hover{ background:#f1f5ff; }
 
-    .hamburger{ display:block; z-index:1001; }
-
+    /* Nav menu - tersembunyi default, muncul saat .active */
     .nav-menu{
-        position:absolute;
-        top:100%; left:0;
+        display:none;
+        position:fixed;
+        top:56px;
+        left:0;
+        right:0;
         width:100%;
         background:#fff;
-        display:none;
         flex-direction:column;
         align-items:flex-start;
-        padding:20px;
-        box-shadow:0 10px 25px rgba(0,0,0,.08);
+        padding:16px 5% 24px;
+        box-shadow:0 8px 24px rgba(0,0,0,.1);
+        border-top:1px solid #e2e8f0;
+        z-index:9998;
+    }
+    .nav-menu.active{ display:flex; }
+
+    /* Nav links vertikal */
+    .nav-links{
+        flex-direction:column;
+        width:100%;
+        gap:0;
+    }
+    .nav-links a{
+        padding:14px 0;
+        border-bottom:1px solid #f1f5f9;
+        font-size:15px;
+        width:100%;
+        display:block;
+    }
+    .nav-links a:last-child{ border-bottom:none; }
+
+    /* Tombol register */
+    .nav-right{ width:100%; margin-top:16px; }
+    .btn-register{
+        display:block;
+        width:100%;
+        text-align:center;
+        padding:13px;
+        font-size:15px;
+        border-radius:12px;
     }
 
-    .nav-menu.active{ display:flex; }
-    .nav-links{ flex-direction:column; width:100%; gap:20px; }
-    .nav-right{ width:100%; margin-top:20px; }
-    .btn-register{ display:block; width:100%; text-align:center; }
-
+    /* Hero */
     .hero{ padding:70px 5%; }
     .hero-content h1{ font-size:32px; }
     .hero-buttons{ flex-wrap:nowrap; }
     .hero-btn{ flex:1; min-width:0; font-size:13px; padding:12px 10px; }
 
+    /* CTA */
     .cta-buttons{ flex-wrap:nowrap; width:100%; }
     .cta-button{ flex:1; font-size:13px; padding:14px 10px; }
 
+    /* Section */
     .section-header h2{ font-size:28px; }
-
     .how-it-works{ padding:70px 16px; }
 
+    /* Cards */
     .step-card{ padding:24px 18px; border-radius:20px; }
     .step-card h4{ font-size:16px; }
     .step-card p{ font-size:13px; line-height:1.6; }
-
     .merchant-icon{ width:120px; height:120px; }
     .merchant-icon img{ width:100px; height:100px; }
-    .footer{
-    padding:50px 6% 20px;
-}
 
-.footer-grid{
-    grid-template-columns:1fr;
-    gap:30px;
-}
-
-.footer-col h4{
-    margin-bottom:15px;
-}
-
-.footer-logo{
-    width:150px;
-}
+    /* Footer */
+    .footer{ padding:50px 6% 20px; }
+    .footer-grid{ grid-template-columns:1fr; gap:30px; }
+    .footer-col h4{ margin-bottom:15px; }
+    .footer-logo{ width:150px; }
 }
 
 /* =========================
