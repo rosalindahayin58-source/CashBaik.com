@@ -57,10 +57,26 @@ const productLink = ref('')
 
 function checkLink() {
   if (!productLink.value.trim()) {
-    alert('Masukkan link produk terlebih dahulu!')
+    alert('Silakan ketik nama merchant terlebih dahulu, contoh: Shopee')
     return
   }
-  alert(`Mengecek cashback untuk: ${productLink.value}`)
+  const query = productLink.value.trim().toLowerCase()
+
+  const merchants = {
+    'shopee': 'https://shopee.co.id',
+    'tokopedia': 'https://www.tokopedia.com',
+    'lazada': 'https://www.lazada.co.id',
+    'blibli': 'https://www.blibli.com',
+    'bukalapak': 'https://www.bukalapak.com',
+}
+
+const found = Object.keys(merchants).find(key => query.includes(key))
+
+  if (found) {
+    window.open(merchants[found], '_blank')
+  } else {
+    alert(`Merchant "${productLink.value}" belum tersedia. Coba: Shopee, Tokopedia, atau Lazada.`)
+  }
 }
 </script>
 
