@@ -1,6 +1,6 @@
 <template>
   <section class="cta-section" id="mulai">
-    <h2>Mulai Belanja Lebih Hemat Hari Ini <span class="rocket">🚀</span></h2>
+    <h2>Klaim promonya Sekarang <span class="rocket">🔥</span></h2>
     <p>
       Bergabunglah bersama 50.000+ pengguna yang sudah merasakan manfaat
       cashback dari CashBaik setiap harinya.
