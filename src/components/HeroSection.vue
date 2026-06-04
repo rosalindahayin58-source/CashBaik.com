@@ -25,7 +25,7 @@
             <input
               v-model="productLink"
               type="text"
-              placeholder="Tempel link produk di sini..."
+              placeholder="Cari merchant favoritmu..."
             />
           </div>
           <button id="checkBtn" @click="checkLink">Cek Cashback</button>
