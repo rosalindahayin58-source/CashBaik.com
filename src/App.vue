@@ -6,6 +6,7 @@
     <MerchantSection />
     <CtaSection />
     <FooterSection />
+    <BackToTop />
   </div>
 </template>
 
@@ -16,4 +17,5 @@ import HowItWorks from './components/HowItWorks.vue'
 import MerchantSection from './components/MerchantSection.vue'
 import CtaSection from './components/CtaSection.vue'
 import FooterSection from './components/FooterSection.vue'
+import BackToTop from './components/BackToTop.vue'
 </script>
