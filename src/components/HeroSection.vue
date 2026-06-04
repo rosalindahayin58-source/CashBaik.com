@@ -10,7 +10,7 @@
 
         <h1>
           Belanja Lebih Hemat <br />
-          <span>Bersama CashBaik</span>
+          <span class="shimmer-text">Bersama CashBaik</span>
         </h1>
 
         <p>
@@ -32,13 +32,13 @@
         </div>
 
         <!-- CTA buttons -->
-       <div class="hero-buttons">
-         <a href="https://cashbaik.com/" class="hero-btn primary-btn" target="_blank" rel="noopener">
-          Kunjungi Website
-        </a>
-         <a href="https://play.google.com/store/apps/details?id=com.cashbaik.app&pcampaignid=web_share" class="hero-btn secondary-btn" target="_blank" rel="noopener">
+        <div class="hero-buttons">
+          <a href="https://cashbaik.com/" class="hero-btn primary-btn" target="_blank" rel="noopener">
+            Kunjungi Website
+          </a>
+          <a href="https://play.google.com/store/apps/details?id=com.cashbaik.app&pcampaignid=web_share" class="hero-btn secondary-btn" target="_blank" rel="noopener">
             Download Aplikasi
-        </a>
+          </a>
         </div>
       </div>
 
@@ -63,3 +63,29 @@ function checkLink() {
   alert(`Mengecek cashback untuk: ${productLink.value}`)
 }
 </script>
+
+<style scoped>
+@keyframes shimmer {
+  0%   { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+.shimmer-text {
+  background: linear-gradient(
+    90deg,
+    #2563eb 0%,
+    #2563eb 35%,
+    #93c5fd 50%,
+    #ffffff 55%,
+    #93c5fd 60%,
+    #2563eb 65%,
+    #2563eb 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shimmer 3s linear infinite;
+  display: inline-block;
+}
+</style>
