@@ -40,19 +40,19 @@ const merchants = [
   {
     name: 'Shopee',
     logo: '/merchants/shopee.png',
-    cashback: 'Voucher Cashback & Gratis Ongkir hingga Rp1 Juta.',
+    cashback: 'Nikmati voucher gratis ongkir tanpa minimal belanja.',
     url: '#',
   },
   {
     name: 'Tokopedia',
     logo: '/merchants/tokopedia.png',
-    cashback: 'Voucher Belanja & Cashback hingga Rp160.000.',
+    cashback: 'Nikmati cashback hingga Rp 500.000 untuk transaksi pembayaran tertentu..',
     url: '#',
   },
   {
     name: 'Lazada',
     logo: '/merchants/lazada.png',
-    cashback: 'Voucher diskon hingga Rp40.000.',
+    cashback: 'Pantau jadwal flash sale setiap harinya untuk mendapatkan barang dengan harga terendah dalam waktu terbatas.',
     url: '#',
   },
 ]
