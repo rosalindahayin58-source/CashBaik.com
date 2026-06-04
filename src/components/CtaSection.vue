@@ -1,9 +1,8 @@
 <template>
   <section class="cta-section" id="mulai">
-    <h2>Mulai Hemat Sekarang!</h2>
+    <h2>Mulai Belanja Lebih Hemat Hari Ini 🚀</h2>
     <p>
-      Bergabunglah bersama 50.000+ pengguna yang sudah merasakan manfaat
-      cashback dari CashBaik setiap harinya.
+      Dapatkan cashback dan promo terbaik dari berbagai merchant favoritmu hanya dalam satu platform..
     </p>
     <div class="cta-buttons">
   <a href="https://cashbaik.com/" class="cta-button primary-cta" target="_blank" rel="noopener">
