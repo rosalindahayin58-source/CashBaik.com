@@ -30,22 +30,12 @@
 
       <!-- Contact col -->
       <div class="footer-col">
-        <h4>Kontak</h4>
-        <p>
-          <i class="fas fa-envelope"></i>
-          support@cashbaik.id
-        </p>
-        <p>
-          <i class="fab fa-whatsapp"></i>
-          +62 812-3456-7890
-        </p>
-        <p>
-          <i class="fas fa-map-marker-alt"></i>
-          Jakarta, Indonesia
-        </p>
-      </div>
+      <h4>Kontak</h4>
+      <p><span class="icon">📧</span> support@cashbaik.id</p>
+      <p><span class="icon">📱</span> +62 812-3456-7890</p>
+      <p><span class="icon">📍</span> Jakarta, Indonesia</p>
     </div>
-
+</div>
     <div class="footer-bottom">
       <p>&copy; {{ currentYear }} CashBaik. All Rights Reserved.</p>
     </div>

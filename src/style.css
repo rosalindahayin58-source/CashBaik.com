@@ -455,6 +455,11 @@ img{ max-width:100%; height:auto; display:block; }
     align-items:center;
     gap:10px;
 }
+.footer-col p span.icon {
+    width: 20px;
+    text-align: center;
+    flex-shrink: 0;
+}
 
 .footer-col i{
     color:#4f7cff;
