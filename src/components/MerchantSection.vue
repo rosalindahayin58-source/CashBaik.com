@@ -41,7 +41,7 @@ const merchants = [
     name: 'Shopee',
     logo: '/merchants/shopee.png',
     cashback: 'Nikmati voucher gratis ongkir tanpa minimal belanja.',
-    url: '#',
+    url: 'https://shopee.co.id',
   },
   {
     name: 'Tokopedia',
