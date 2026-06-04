@@ -22,15 +22,14 @@
 
 <style scoped>
 @keyframes rocketLaunch {
-  0%   { transform: translateY(0px) rotate(-45deg); }
-  30%  { transform: translateY(-12px) rotate(-45deg); }
-  60%  { transform: translateY(-6px) rotate(-45deg); }
-  100% { transform: translateY(0px) rotate(-45deg); }
+  0%   { transform: translateY(0px); }
+  30%  { transform: translateY(-12px); }
+  60%  { transform: translateY(-6px); }
+  100% { transform: translateY(0px); }
 }
 
 .rocket {
   display: inline-block;
   animation: rocketLaunch 1.5s ease-in-out infinite;
-  transform-origin: center;
 }
 </style>
