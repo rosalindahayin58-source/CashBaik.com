@@ -99,7 +99,7 @@ img{ max-width:100%; height:auto; display:block; }
    HERO
 ========================= */
 .hero{
-    padding:90px 8%;
+    padding:90px 8% 40px;
     background:linear-gradient(135deg,#f3f7ff,#ffffff);
 }
 
@@ -210,7 +210,7 @@ img{ max-width:100%; height:auto; display:block; }
    HOW IT WORKS
 ========================= */
 .how-it-works{
-    padding:100px 8%;
+    padding:60px 8%;
     background:var(--bg);
 }
 
