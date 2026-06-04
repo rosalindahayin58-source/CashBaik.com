@@ -17,7 +17,7 @@
 }
 
 html,body{ overflow-x:hidden; }
-body{ padding-top:70px; }
+body{ padding-top:56px; }
 
 body{
     background:var(--white);
@@ -33,19 +33,17 @@ img{ max-width:100%; height:auto; display:block; }
 ========================= */
 .navbar{
     width:100%;
-    height:70px;
-    padding:0 8%;
+    padding:12px 8%;
     display:flex;
     justify-content:space-between;
     align-items:center;
+    background:#fff;
     position:fixed;
     top:0;
     left:0;
+    right:0;
     z-index:9999;
-    background:rgba(255,255,255,0.95);
-    backdrop-filter:blur(10px);
     box-shadow:0 4px 20px rgba(0,0,0,.05);
-    transition:.3s ease;
 }
 
 .logo img{ height:25px; }
@@ -624,4 +622,16 @@ img{ max-width:100%; height:auto; display:block; }
     width: 100%;
     height: 100%;
     object-fit: contain;
+}
+/* =========================
+   HERO IMAGE FLOATING
+========================= */
+@keyframes floating {
+    0%   { transform: translateY(0px); }
+    50%  { transform: translateY(-18px); }
+    100% { transform: translateY(0px); }
+}
+
+.hero-image img {
+    animation: floating 3s ease-in-out infinite;
 }
