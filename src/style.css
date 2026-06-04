@@ -572,6 +572,7 @@ img{ max-width:100%; height:auto; display:block; }
     /* Hero */
     .hero{ padding:70px 5%; }
     .hero-content h1{ font-size:32px; }
+    .input-group input{ font-size:11px; }
     .hero-buttons{ flex-wrap:nowrap; }
     .hero-btn{ flex:1; min-width:0; font-size:13px; padding:12px 10px; }
 
