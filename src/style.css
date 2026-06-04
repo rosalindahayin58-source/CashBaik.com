@@ -305,7 +305,7 @@ img{ max-width:100%; height:auto; display:block; }
    MERCHANT SECTION
 ========================= */
 .merchant-section{
-    padding:60px 8%;
+    padding:40px 8%;
     background:#eef2f7;
 }
 
@@ -582,7 +582,7 @@ img{ max-width:100%; height:auto; display:block; }
 
     /* Section */
     .section-header h2{ font-size:28px; }
-    .how-it-works{ padding:70px 16px; }
+    .how-it-works{ padding:40px 16px; }
 
     /* Cards */
     .step-card{ padding:24px 18px; border-radius:20px; }
