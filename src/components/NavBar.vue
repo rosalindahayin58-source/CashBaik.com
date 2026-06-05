@@ -1,36 +1,33 @@
 <template>
   <nav class="navbar">
-    <!-- Logo -->
     <div class="logo">
-      <a href="#">
+      <a href="#beranda">
         <img src="/images/logo.jpg" alt="CashBaik Logo" />
       </a>
     </div>
 
-    <!-- Nav Menu (desktop: flex, mobile: hidden sampai active) -->
-    <div class="nav-menu" :class="{ active: menuOpen }" id="navMenu">
-      <ul class="nav-links">
-        <li><a href="#beranda"   :class="{ active: activeSection === 'beranda' }"   @click="closeMenu">Beranda</a></li>
-        <li><a href="#cara-kerja" :class="{ active: activeSection === 'cara-kerja' }" @click="closeMenu">Cara Kerja</a></li>
-        <li><a href="#merchant"  :class="{ active: activeSection === 'merchant' }"  @click="closeMenu">Merchant</a></li>
-        <li><a href="#kontak"    :class="{ active: activeSection === 'kontak' }"    @click="closeMenu">Kontak</a></li>
-      </ul>
-      <div class="nav-right">
-        <a href="https://cashbaik.com" target="_blank" class="btn-register" @click="closeMenu">Mulai Cashback</a>
-      </div>
+    <div class="hamburger" @click="toggleMenu">
+      <i class="fas fa-bars"></i>
     </div>
 
-    <!-- Hamburger (mobile only, ditaruh TERAKHIR agar flexbox push ke kanan) -->
-    <div class="hamburger" @click="toggleMenu" aria-label="Toggle menu">
-      <i :class="menuOpen ? 'fas fa-times' : 'fas fa-bars'"></i>
+    <div class="nav-menu" :class="{ active: menuOpen }">
+      <ul class="nav-links">
+        <li><a href="#beranda" :class="{ active: activeSection === 'beranda' }" @click="closeMenu">Beranda</a></li>
+        <li><a href="#cara-kerja" :class="{ active: activeSection === 'cara-kerja' }" @click="closeMenu">Cara Kerja</a></li>
+        <li><a href="#merchant" :class="{ active: activeSection === 'merchant' }" @click="closeMenu">Merchant</a></li>
+        <li><a href="#kontak" :class="{ active: activeSection === 'kontak' }" @click="closeMenu">Kontak</a></li>
+      </ul>
+      <div class="nav-right">
+        <a href="https://cashbaik.com/" class="btn-register" target="_blank" rel="noopener">Mulai Cashback</a>
+      </div>
     </div>
   </nav>
 </template>
 
 <script setup>
-import { ref, onMounted, onUnmounted } from 'vue'
+import { ref, onMounted, onBeforeUnmount } from 'vue'
 
-const menuOpen     = ref(false)
+const menuOpen = ref(false)
 const activeSection = ref('beranda')
 
 function toggleMenu() {
@@ -41,28 +38,21 @@ function closeMenu() {
   menuOpen.value = false
 }
 
-// Tutup menu saat klik di luar navbar
-function handleClickOutside(e) {
-  const navbar = document.querySelector('.navbar')
-  if (navbar && !navbar.contains(e.target)) {
-    menuOpen.value = false
+function handleScroll() {
+  const sections = ['beranda', 'cara-kerja', 'merchant', 'kontak']
+
+  for (const id of sections) {
+    const el = document.getElementById(id)
+    if (!el) continue
+
+    const rect = el.getBoundingClientRect()
+    if (rect.top <= 100 && rect.bottom >= 100) {
+      activeSection.value = id
+      break
+    }
   }
 }
 
-// Tutup menu saat resize ke desktop
-function handleResize() {
-  if (window.innerWidth > 768) {
-    menuOpen.value = false
-  }
-}
-
-onMounted(() => {
-  document.addEventListener('click', handleClickOutside)
-  window.addEventListener('resize', handleResize)
-})
-
-onUnmounted(() => {
-  document.removeEventListener('click', handleClickOutside)
-  window.removeEventListener('resize', handleResize)
-})
+onMounted(() => window.addEventListener('scroll', handleScroll))
+onBeforeUnmount(() => window.removeEventListener('scroll', handleScroll))
 </script>
