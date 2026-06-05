@@ -38,26 +38,32 @@ function closeMenu() {
   menuOpen.value = false
 }
 
-function handleScroll() {
+let observer = null
+
+onMounted(() => {
   const sections = ['beranda', 'cara-kerja', 'merchant', 'kontak']
 
-const isBottom =  window.innerHeight + window.scrollY >= document.body.offsetHeight - 200 if  (isBottom) {
-  activeSection.value ='kontak'
-  return
-}
-
-  for (const id of sections) {
-    const el = document.getElementById(id)
-    if (!el) continue
-
-    const rect = el.getBoundingClientRect()
-    if (rect.top <= 100 && rect.bottom >= 100) {
-      activeSection.value = id
-      break
+  observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          activeSection.value = entry.target.id
+        }
+      })
+    },
+    {
+      rootMargin: '-50% 0px -50% 0px',
+      threshold: 0,
     }
-  }
-}
+  )
 
-onMounted(() => window.addEventListener('scroll', handleScroll))
-onBeforeUnmount(() => window.removeEventListener('scroll', handleScroll))
+  sections.forEach((id) => {
+    const el = document.getElementById(id)
+    if (el) observer.observe(el)
+  })
+})
+
+onBeforeUnmount(() => {
+  if (observer) observer.disconnect()
+})
 </script>
