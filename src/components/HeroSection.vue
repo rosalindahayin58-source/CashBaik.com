@@ -99,7 +99,7 @@ const found = Object.keys(merchants).find(key => query.includes(key))
   display:inline-flex;
   align-items: center;
   gap: 8px;
-  background: linear-gradient(135deg,.#1b2b7a, #2563eb);
+  background: linear-gradient(135deg, #1b2b7a, #2563eb);
   color: #fff;
   padding: 10px  18px;
   border-radius: 30px;
