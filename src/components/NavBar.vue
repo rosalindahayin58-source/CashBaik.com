@@ -41,6 +41,11 @@ function closeMenu() {
 function handleScroll() {
   const sections = ['beranda', 'cara-kerja', 'merchant', 'kontak']
 
+const isBottom =  window.innerHeight + window.scrollY >= document.body.offsetHeight - 50 if  (isBottom) {
+  activeSection.value ='kontak'
+  return
+}
+
   for (const id of sections) {
     const el = document.getElementById(id)
     if (!el) continue
