@@ -1,101 +1,64 @@
 <template>
-  <section class="how-it-works" id="cara-kerja">
-    <div class="section-header">
-      <h2>Bagaimana Cara Kerja CashBaik?</h2>
-      <p>CashBaik adalah aplikasi yang dirancang untuk membantu Anda mengelola keuangan pribadi dengan mudah dan efisiensi. Berikut adalah cara kerja utama dari CashBaik.</p>
-    </div>
+  <section class="py-24 bg-white" id="cara-kerja">
+    <div class="max-w-7xl mx-auto px-6 md:px-12">
+      <!-- Section Header -->
+      <div class="text-center max-w-2xl mx-auto mb-20">
+        <h2 class="text-4xl font-extrabold text-[#0b1b66]">Gampang Banget!</h2>
+      </div>
 
-    <div ref="splideEl" class="splide" aria-label="Cara Kerja CashBaik">
-      <div class="splide__track">
-        <ul class="splide__list">
-          <li
-            v-for="(step, index) in steps"
-            :key="index"
-            class="splide__slide"
-          >
-            <div class="step-card">
-              <div class="step-icon">
-                <span class="step-emoji">{{ step.emoji }}</span>
-                <span>{{ step.number }}</span>
-              </div>
-              <h4>{{ step.title }}</h4>
-              <p>{{ step.desc }}</p>
+      <!-- Steps Flow -->
+      <div class="relative max-w-5xl mx-auto">
+        <!-- Connecting Line (Desktop) -->
+        <div class="hidden md:block absolute top-10 left-[15%] right-[15%] h-0.5 bg-gray-200 -z-0"></div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 relative z-10">
+          <!-- Step 1 -->
+          <div class="flex flex-col items-center text-center group">
+            <!-- Icon -->
+            <div class="w-20 h-20 bg-[#0b1b66] text-white rounded-full flex items-center justify-center shadow-lg transition-transform duration-300 group-hover:scale-110 mb-6">
+              <span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">storefront</span>
             </div>
-          </li>
-        </ul>
+            <!-- Title -->
+            <h3 class="text-lg font-bold text-gray-800 mb-2">Pilih Merchant</h3>
+            <!-- Description -->
+            <p class="text-gray-500 text-sm max-w-xs leading-relaxed">
+              Temukan toko favoritmu lewat aplikasi atau website CashBaik.
+            </p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="flex flex-col items-center text-center group">
+            <!-- Icon -->
+            <div class="w-20 h-20 bg-[#ffd54a] text-[#0b1b66] rounded-full flex items-center justify-center shadow-lg transition-transform duration-300 group-hover:scale-110 mb-6">
+              <span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">shopping_cart</span>
+            </div>
+            <!-- Title -->
+            <h3 class="text-lg font-bold text-gray-800 mb-2">Belanja Biasa</h3>
+            <!-- Description -->
+            <p class="text-gray-500 text-sm max-w-xs leading-relaxed">
+              Lakukan pembelian seperti biasa di situs merchant tersebut.
+            </p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="flex flex-col items-center text-center group">
+            <!-- Icon -->
+            <div class="w-20 h-20 bg-[#005d2e] text-white rounded-full flex items-center justify-center shadow-lg transition-transform duration-300 group-hover:scale-110 mb-6">
+              <span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">payments</span>
+            </div>
+            <!-- Title -->
+            <h3 class="text-lg font-bold text-gray-800 mb-2">Duit Balik!</h3>
+            <!-- Description -->
+            <p class="text-gray-500 text-sm max-w-xs leading-relaxed">
+              Cashback akan masuk ke saldo CashBaik-mu secara otomatis.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 </template>
 
 <script setup>
-import { ref, onMounted, onBeforeUnmount } from 'vue'
-
-const splideEl = ref(null)
-let splideInstance = null
-
-const steps = [
-  {
-    number: 1,
-    emoji: '🔗',
-    title: 'Salin Link Produk dari Marketplace favoritmu.',
-    desc: 'Salin link produk yang ingin Anda beli dari berbagai marketplace seperti Tokopedia, Shopee, Lazada, Bukalapak, Blibli, JDID, TikTok Shop, dan lainnya.',
-  },
-  {
-    number: 2,
-    emoji: '📱',
-    title: 'Buka CashBaik',
-    desc: 'CashBaik otomatis mendapatkan link dari clipboard dan Cashback akan membawa kamu ke halaman detil produk.',
-  },
-  {
-    number: 3,
-    emoji: '🛒',
-    title: 'Tekan "Beli di Marketplace"',
-    desc: 'Cukup tekan tombol "Beli di Marketplace" dan kamu akan diarahkan langsung ke aplikasinya.',
-  },
-  {
-    number: 4,
-    emoji: '✅',
-    title: 'Cashback Diterima',
-    desc: 'Setelah transaksi selesai, cashback otomatis masuk ke akun CashBaik kamu.',
-  },
-  {
-    number: 5,
-    emoji: '💰',
-    title: 'Tarik Saldo',
-    desc: 'Tarik saldo cashback-mu ke rekening bank atau e-wallet kapan saja kamu mau.',
-  },
-]
-
-onMounted(async () => {
-  const { default: Splide } = await import('@splidejs/splide')
-  await import('@splidejs/splide/css')
-
-  splideInstance = new Splide(splideEl.value, {
-    type: 'loop',
-    perPage: 3,
-    perMove: 1,
-    gap: '20px',
-    padding: { left: 0, right: 0 },
-    pagination: true,
-    arrows: true,
-    breakpoints: {
-      900: { perPage: 2 },
-      600: { perPage: 1 },
-    },
-  })
-
-  splideInstance.mount()
-})
-
-onBeforeUnmount(() => {
-  if (splideInstance) splideInstance.destroy()
-})
+// Static component representation
 </script>
-
-<style scoped>
-.step-emoji {
-  font-size: 28px;
-  line-height: 1;
-}
-</style>git add src/components/MerchantSection.vuegit add src/components/MerchantSection.vuegit add src/components/MerchantSection.vue

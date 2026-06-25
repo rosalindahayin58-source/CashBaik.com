@@ -1,361 +1,100 @@
 <template>
-  <section class="hero" id="beranda">
-    <div class="hero-container">
-
+  <section class="relative bg-gradient-to-tr from-[#f8fafc] to-[#e0e7ff] pt-28 pb-16 overflow-hidden" id="home">
+    <!-- Hero Main Container -->
+    <div class="max-w-7xl mx-auto px-6 md:px-12 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
       <!-- Left Content -->
-      <div class="hero-content">
-
-        <!-- Badge -->
-        <div class="hero-badges">
-          <div class="trust-badge">
-            <span>🛡️</span>
-            Dipercaya 50.000+ Pengguna
-          </div>
-
-          <div class="cashback-preview">
-            <span class="cashback-label">Cashback Hari Ini</span>
-            <span class="cashback-amount">Rp 125.000</span>
-            <span class="cashback-tag">🔥 Live</span>
-          </div>
+      <div class="z-10 flex flex-col items-start">
+        <!-- Trust Badge -->
+        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#e0e7ff] text-[#0b1b66] font-semibold text-xs mb-6 shadow-sm">
+          <span>🛡️</span>
+          <span>Dipercaya 50.000+ Pengguna</span>
         </div>
 
-
-        <h1>
-          Belanja Lebih Hemat <br />
-          <span class="shimmer-text">
-            Bersama CashBaik
-          </span>
+        <!-- Headline -->
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#0b1b66] tracking-tight leading-tight mb-6">
+          Belanja Cerdas, 
+          <div class="inline-flex flex-wrap gap-2 items-center mt-2">
+            <span class="bg-[#0b1b66] text-[#ffd54a] px-3 py-1 rounded-xl shadow-md">Duit</span>
+            <span class="bg-[#ffd54a] text-[#0b1b66] px-3 py-1 rounded-xl shadow-md">Balik</span>
+            <span>Terus!</span>
+          </div>
         </h1>
 
-
-        <p>
-          Dapatkan cashback dari berbagai merchant favorit seperti
-          Shopee, Tokopedia, Lazada dan marketplace populer lainnya.
+        <!-- Subtitle -->
+        <p class="text-gray-600 text-lg leading-relaxed mb-8 max-w-xl">
+          Dapatkan cashback hingga 30% dari berbagai merchant favoritmu. Belanja seperti biasa, tabungan bertambah otomatis.
         </p>
 
+        <!-- Call to Action Buttons -->
+        <div class="flex flex-wrap gap-4 mb-4">
+          <a 
+            href="#" 
+            class="bg-[#ffd54a] hover:bg-yellow-500 text-[#0b1b66] font-bold px-8 py-3.5 rounded-2xl shadow-lg transition-all transform hover:-translate-y-0.5 active:translate-y-0"
+          >
+            Daftar Sekarang
+          </a>
+          <a 
+            href="#cara-kerja" 
+            class="bg-white hover:bg-gray-50 text-[#0b1b66] font-semibold px-8 py-3.5 rounded-2xl border border-gray-200 shadow-sm transition-all transform hover:-translate-y-0.5 active:translate-y-0"
+          >
+            Cara Kerja
+          </a>
+        </div>
+      </div>
 
-        <!-- Search Box -->
-        <div class="action-box">
+      <!-- Right Visual (Hero Image and floating card) -->
+      <div class="relative flex justify-center lg:justify-end items-center">
+        <!-- Background Blur Graphic -->
+        <div class="absolute w-[400px] h-[400px] bg-blue-300/30 rounded-full blur-3xl -z-10"></div>
+        
+        <div class="relative w-full max-w-md">
+          <!-- Main Hero Image -->
+          <img 
+            class="w-full h-[480px] object-cover rounded-[32px] shadow-2xl border border-white/20"
+            alt="Belanja Hemat CashBaik" 
+            src="/images/hero_woman_shopping.png"
+          />
 
-          <div class="input-group">
-            <i class="fas fa-search search-icon"></i>
-
-            <input
-              v-model="productLink"
-              type="text"
-              placeholder="Cari merchant favoritmu..."
-            />
-
+          <!-- Floating Reward Banner -->
+          <div class="absolute bottom-6 left-6 right-6 glass-card p-4 rounded-2xl shadow-xl border border-white/40 flex items-center gap-4">
+            <div class="w-12 h-12 rounded-full bg-[#0b1b66] flex items-center justify-center flex-shrink-0">
+              <!-- Wallet Card Material Icon -->
+              <span class="material-symbols-outlined text-[#ffd54a]" style="font-variation-settings: 'FILL' 1;">account_balance_wallet</span>
+            </div>
+            <div>
+              <p class="text-xs text-gray-500 font-medium">Total Reward Terkumpul</p>
+              <p class="text-xl font-bold text-[#0b1b66]">Rp 12.450.000</p>
+            </div>
           </div>
-
-
-          <button 
-            id="checkBtn" 
-            @click="checkLink"
-          >
-            Cek Cashback
-          </button>
-
         </div>
-
-
-        <!-- Button -->
-        <div class="hero-buttons">
-
-          <a
-            href="https://cashbaik.com/"
-            class="hero-btn primary-btn"
-            target="_blank"
-            rel="noopener"
-          >
-            Kunjungi Website
-          </a>
-
-
-          <a
-            href="https://play.google.com/store/apps/details?id=com.cashbaik.app&pcampaignid=web_share"
-            class="hero-btn secondary-btn"
-            target="_blank"
-            rel="noopener"
-          >
-            Download Aplikasi
-          </a>
-
-        </div>
-
       </div>
+    </div>
 
-
-      <!-- Right Illustration -->
-      <div class="hero-image">
-
-        <img 
-          src="@/assets/hero.png" 
-          alt="CashBaik Illustration"
-        />
-
+    <!-- Ticker Running Text Banner -->
+    <div class="w-full bg-[#0b1b66] py-3 mt-16 overflow-hidden whitespace-nowrap border-y border-blue-950">
+      <div class="inline-block animate-ticker text-sm font-semibold text-white/90">
+        <span class="mx-8">• Budi S. baru saja mencairkan Rp 250.000 ke GoPay</span>
+        <span class="mx-8">• Anita W. mendapatkan cashback Rp 45.000 dari GrabFood</span>
+        <span class="mx-8">• Rian M. baru saja mendaftar di CashBaik</span>
+        <span class="mx-8">• Budi S. baru saja mencairkan Rp 250.000 ke GoPay</span>
+        <span class="mx-8">• Anita W. mendapatkan cashback Rp 45.000 dari GrabFood</span>
+        <span class="mx-8">• Rian M. baru saja mendaftar di CashBaik</span>
       </div>
-
-
     </div>
   </section>
 </template>
 
-
-
 <script setup>
-
-import { ref } from 'vue'
-
-
-const productLink = ref('')
-
-
-function checkLink() {
-
-
-  if (!productLink.value.trim()) {
-
-    alert(
-      'Silakan ketik nama merchant terlebih dahulu, contoh: Shopee'
-    )
-
-    return
-
-  }
-
-
-  const query = productLink.value
-    .trim()
-    .toLowerCase()
-
-
-
-  const merchants = {
-
-    shopee: 'https://shopee.co.id',
-
-    tokopedia: 'https://www.tokopedia.com',
-
-    lazada: 'https://www.lazada.co.id',
-
-    blibli: 'https://www.blibli.com',
-
-    bukalapak: 'https://www.bukalapak.com'
-
-  }
-
-
-
-  const found = Object.keys(merchants)
-    .find(key => query.includes(key))
-
-
-
-  if(found){
-
-    window.open(
-      merchants[found],
-      '_blank'
-    )
-
-  }else{
-
-    alert(
-      `Merchant "${productLink.value}" belum tersedia. Coba: Shopee, Tokopedia, atau Lazada.`
-    )
-
-  }
-
-
-}
-
+// Static presentation of hero section
 </script>
 
-
-
 <style scoped>
-
-
-.hero-badges {
-
-  display:flex;
-
-  align-items:center;
-
-  gap:12px;
-
-  flex-wrap:wrap;
-
-  margin-bottom:20px;
-
+@keyframes ticker {
+  0% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(-50%, 0, 0); }
 }
-
-
-
-.trust-badge {
-
-
-  background:#f1f5f9;
-
-  padding:10px 18px;
-
-  border-radius:30px;
-
-  font-size:14px;
-
-  font-weight:600;
-
+.animate-ticker {
+  display: inline-block;
+  animation: ticker 25s linear infinite;
 }
-
-
-
-.cashback-preview {
-
-
-  display:flex;
-
-  align-items:center;
-
-  gap:8px;
-
-  background:linear-gradient(
-    135deg,
-    #1b2b7a,
-    #2563eb
-  );
-
-
-  color:white;
-
-  padding:10px 18px;
-
-  border-radius:30px;
-
-  font-size:14px;
-
-  font-weight:600;
-
-
-  animation:pulse 2s infinite;
-
-}
-
-
-
-.cashback-label{
-
-  opacity:.8;
-
-  font-size:12px;
-
-}
-
-
-
-.cashback-amount{
-
-  font-size:16px;
-
-  font-weight:800;
-
-  color:#ffd54a;
-
-}
-
-
-
-.cashback-tag{
-
-  background:rgba(255,255,255,.2);
-
-  padding:3px 8px;
-
-  border-radius:20px;
-
-  font-size:12px;
-
-}
-
-
-
-@keyframes pulse{
-
-
-0%,100%{
-
-transform:scale(1);
-
-}
-
-
-50%{
-
-transform:scale(1.03);
-
-}
-
-
-}
-
-
-
-@keyframes shimmer{
-
-
-from{
-
-background-position:-200% center;
-
-}
-
-
-to{
-
-background-position:200% center;
-
-}
-
-
-}
-
-
-
-.shimmer-text{
-
-
-background:linear-gradient(
-
-90deg,
-
-#2563eb,
-
-#93c5fd,
-
-#ffffff,
-
-#93c5fd,
-
-#2563eb
-
-);
-
-
-background-size:200% auto;
-
-
--webkit-background-clip:text;
-
--webkit-text-fill-color:transparent;
-
-
-animation:shimmer 3s linear infinite;
-
-
-display:inline-block;
-
-
-}
-
-
 </style>

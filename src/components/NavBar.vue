@@ -1,69 +1,58 @@
 <template>
-  <nav class="navbar">
-    <div class="logo">
-      <a href="#beranda">
-        <img src="/images/logo.jpg" alt="CashBaik Logo" />
-      </a>
-    </div>
-
-    <div class="hamburger" @click="toggleMenu">
-      <i class="fas fa-bars"></i>
-    </div>
-
-    <div class="nav-menu" :class="{ active: menuOpen }">
-      <ul class="nav-links">
-        <li><a href="#beranda" :class="{ active: activeSection === 'beranda' }" @click="closeMenu">Beranda</a></li>
-        <li><a href="#cara-kerja" :class="{ active: activeSection === 'cara-kerja' }" @click="closeMenu">Cara Kerja</a></li>
-        <li><a href="#merchant" :class="{ active: activeSection === 'merchant' }" @click="closeMenu">Merchant</a></li>
-        <li><a href="#kontak" :class="{ active: activeSection === 'kontak' }" @click="closeMenu">Kontak</a></li>
-      </ul>
-      <div class="nav-right">
-        <a href="https://cashbaik.com/" class="btn-register" target="_blank" rel="noopener">Mulai Cashback</a>
+  <header class="fixed top-0 w-full z-50 bg-white border-b border-gray-100">
+    <nav class="flex justify-between items-center px-6 md:px-12 py-4 max-w-7xl mx-auto">
+      <!-- Logo -->
+      <div class="flex items-center gap-2">
+        <span class="font-bold text-2xl text-[#000666] tracking-tight">CashBaik</span>
       </div>
-    </div>
-  </nav>
+
+      <!-- Navigation Links -->
+      <div class="hidden md:flex items-center gap-8">
+        <a 
+          href="#home" 
+          class="text-[#000666] font-semibold text-sm relative py-1 border-b-2 border-[#000666]"
+        >
+          Home
+        </a>
+        <a 
+          href="#merchant" 
+          class="text-gray-500 hover:text-[#000666] font-medium text-sm transition-colors py-1"
+        >
+          Merchant
+        </a>
+        <a 
+          href="#promo" 
+          class="text-gray-500 hover:text-[#000666] font-medium text-sm transition-colors py-1"
+        >
+          Promo
+        </a>
+        <a 
+          href="#bantuan" 
+          class="text-gray-500 hover:text-[#000666] font-medium text-sm transition-colors py-1"
+        >
+          Bantuan
+        </a>
+      </div>
+
+      <!-- Auth Actions -->
+      <div class="flex items-center gap-6">
+        <a 
+          href="#" 
+          class="text-[#000666] font-semibold text-sm hover:underline"
+        >
+          Masuk
+        </a>
+        <a 
+          href="#" 
+          class="bg-[#0b1b66] hover:bg-[#000666] text-white px-6 py-2 rounded-lg font-semibold text-sm transition-all shadow-sm"
+        >
+          Daftar
+        </a>
+      </div>
+    </nav>
+  </header>
 </template>
 
 <script setup>
-import { ref, onMounted, onBeforeUnmount } from 'vue'
-
-const menuOpen = ref(false)
-const activeSection = ref('beranda')
-
-function toggleMenu() {
-  menuOpen.value = !menuOpen.value
-}
-
-function closeMenu() {
-  menuOpen.value = false
-}
-
-let observer = null
-
-onMounted(() => {
-  const sections = ['beranda', 'cara-kerja', 'merchant', 'kontak']
-
-  observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          activeSection.value = entry.target.id
-        }
-      })
-    },
-    {
-      rootMargin: '-50% 0px -50% 0px',
-      threshold: 0,
-    }
-  )
-
-  sections.forEach((id) => {
-    const el = document.getElementById(id)
-    if (el) observer.observe(el)
-  })
-})
-
-onBeforeUnmount(() => {
-  if (observer) observer.disconnect()
-})
+// No complex reactive state needed for static landing
 </script>

@@ -1,10 +1,11 @@
 <template>
   <button
     v-if="isVisible"
-    class="back-to-top"
+    class="fixed bottom-8 right-8 w-12 h-12 bg-primary text-white rounded-full shadow-lg flex items-center justify-center hover:bg-primary-container hover:scale-110 active:scale-95 transition-all z-50"
     @click="scrollToTop"
+    aria-label="Back to top"
   >
-    ↑
+    <span class="material-symbols-outlined">keyboard_arrow_up</span>
   </button>
 </template>
 
@@ -24,30 +25,3 @@ function scrollToTop() {
 onMounted(() => window.addEventListener('scroll', handleScroll))
 onBeforeUnmount(() => window.removeEventListener('scroll', handleScroll))
 </script>
-
-<style scoped>
-.back-to-top {
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  width: 45px;
-  height: 45px;
-  background: var(--primary);
-  color: #fff;
-  border: none;
-  border-radius: 50%;
-  font-size: 20px;
-  cursor: pointer;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-  transition: .3s;
-  z-index: 9999;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.back-to-top:hover {
-  background: var(--secondary);
-  transform: translateY(-3px);
-}
-</style>
