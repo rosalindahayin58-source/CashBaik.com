@@ -7,16 +7,15 @@
         <!-- Trust Badge -->
         <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#e0e7ff] text-[#0b1b66] font-semibold text-xs mb-6 shadow-sm">
           <span>🛡️</span>
-          <span>Dipercaya 50.000+ Pengguna</span>
+          <span>Gratis & Terpercaya</span>
         </div>
 
         <!-- Headline -->
         <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#0b1b66] tracking-tight leading-tight mb-6">
-          Belanja Cerdas, 
+          Dapatkan Cashback Terbaikmu, 
           <div class="inline-flex flex-wrap gap-2 items-center mt-2">
-            <span class="bg-[#0b1b66] text-[#ffd54a] px-3 py-1 rounded-xl shadow-md">Duit</span>
-            <span class="bg-[#ffd54a] text-[#0b1b66] px-3 py-1 rounded-xl shadow-md">Balik</span>
-            <span>Terus!</span>
+            <span class="bg-[#0b1b66] text-[#ffd54a] px-3 py-1 rounded-xl shadow-md">dengan</span>
+            <span class="bg-[#ffd54a] text-[#0b1b66] px-3 py-1 rounded-xl shadow-md">CashBaik</span>
           </div>
         </h1>
 
