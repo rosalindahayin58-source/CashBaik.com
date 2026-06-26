@@ -9,10 +9,10 @@
         <!-- Left Content -->
         <div class="z-10 text-center md:text-left max-w-xl">
           <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-white mb-6">
-            Siap untuk untung terus?
+            Mulai Dapatkan Cashback Sekarang!
           </h2>
           <p class="text-blue-100 text-base md:text-lg mb-8 leading-relaxed">
-            Gabung dengan ribuan pengguna cerdas lainnya yang sudah menikmati cashback setiap hari.
+            Bergabung dengan jutaan pengguna CashBaik dan dapatkan Cashback dari setiap belanja online.
           </p>
           
           <!-- App Download Badges -->
