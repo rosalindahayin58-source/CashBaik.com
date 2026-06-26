@@ -3,7 +3,9 @@
     <div class="max-w-7xl mx-auto px-6 md:px-12">
       <!-- Section Header -->
       <div class="text-center max-w-2xl mx-auto mb-20">
-        <h2 class="text-4xl font-extrabold text-[#0b1b66]">Gampang Banget!</h2>
+        <h2 class="text-4xl font-extrabold text-[#0b1b66]">Cara Kerja CashBaik</h2>
+        <p>Hanya 3 langkah mudah untuk mulai mendapatkan cashback dari belanja online.
+        </p>
       </div>
 
       <!-- Steps Flow -->
