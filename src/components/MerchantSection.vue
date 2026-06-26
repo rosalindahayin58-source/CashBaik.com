@@ -5,7 +5,7 @@
       <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-12">
         <div>
           <h2 class="text-3xl font-bold text-[#0b1b66] mb-2">Merchant Populer</h2>
-          <p class="text-gray-500 font-medium">Makin banyak pilihan, makin cuan belanjanya!</p>
+          <p class="text-gray-500 font-medium">Belanja di merchant favoritmu dan dapatkan cashback otomatis langsung masuk ke saldo CashBaik-mu.</p>
         </div>
         <a 
           href="#" 
