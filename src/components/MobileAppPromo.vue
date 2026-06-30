@@ -13,13 +13,6 @@
             Dapatkan notifikasi promo eksklusif, lacak cashback secara real-time, dan tarik saldo langsung dari smartphone Anda.
           </p>
           <div class="flex flex-wrap gap-4">
-            <a class="inline-block transition-transform hover:scale-105 active:scale-95" href="https://apps.apple.com" target="_blank" rel="noopener">
-              <img
-                class="h-14"
-                alt="Download di App Store"
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIPlO0w9k--KvD2wei0w5F6X6EQ2mqvvGbYgcpodiQMmm2FfVaHfDsEPyRorjATwrlkJQEakRKL1UlbQ8WAzyTTkQjWOCcNLGGCBocHcq_euAZS_XdyV2GVXcZSkpEqNcd8oL65rB4w1gOCq5_n9EjvJLJn285n5iMh1RH9mLgbbZ8NdekOL8xDOFXd9zyKH3OoxTDFdx83snQyAQj83JhUcpE5wp0p4iWuqvWeortf95jD8bo6m5xnDy7eG1z-RSbPvmkqB_k_Lg"
-              />
-            </a>
             <a class="inline-block transition-transform hover:scale-105 active:scale-95" href="https://play.google.com/store/apps/details?id=com.cashbaik.app&pcampaignid=web_share" target="_blank" rel="noopener">
               <img
                 class="h-14"
