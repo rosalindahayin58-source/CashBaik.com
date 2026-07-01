@@ -56,7 +56,7 @@
 
         <!-- Download -->
         <a
-          href="#download"
+          href="https://play.google.com/store/apps/details?id=com.cashbaik.app&pcampaignid=web_share"
           @click.prevent="scrollToSection('download')"
           class="bg-[#0b1b66] hover:bg-[#000666] text-white px-6 py-2 rounded-lg font-semibold text-sm transition-all shadow-sm"
         >
