@@ -53,12 +53,6 @@
 
         <!-- Right Content -->
         <div class="z-10 flex flex-col items-center md:items-start">
-          <a 
-            href="#" 
-            class="bg-[#ffd54a] hover:bg-yellow-500 text-[#0b1b66] font-extrabold px-10 py-4 rounded-2xl shadow-xl transition-all transform hover:-translate-y-0.5 active:translate-y-0 text-center w-full md:w-auto"
-          >
-            Daftar Sekarang
-          </a>
           <p class="text-blue-200 text-xs mt-3 text-center md:text-left">
             Gratis selamanya, tanpa biaya admin!
           </p>
