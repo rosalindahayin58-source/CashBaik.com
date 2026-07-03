@@ -24,7 +24,7 @@
               rel="noopener"
               class="flex items-center gap-2.5 bg-black hover:bg-zinc-900 text-white px-5 py-2.5 rounded-xl border border-zinc-800 transition-all shadow-md"
             >
-              <img src="/public/images/google-play-icon.png" alt="Google Play" class="w-6 h-6" />
+              <img src="/images/google-play-icon.png" alt="Google Play" class="w-6 h-6" />
               <div class="text-left">
                 <p class="text-[9px] uppercase tracking-wider text-gray-400">GET IT ON</p>
                 <p class="text-xs font-bold -mt-0.5">Google Play</p>

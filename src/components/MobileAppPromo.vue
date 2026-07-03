@@ -22,7 +22,7 @@
               <img
                 class="h-8 w-8"
                 alt="Google Play"
-                src="/images/google-play-icon.png"
+                src="/images/google-play-icon.png" alt="Google Play" class="w-6 h-6"
               />
               <span class="flex flex-col items-start leading-tight text-left">
                 <span class="text-[11px] font-medium text-white/80 uppercase tracking-wide">Get it on</span>
