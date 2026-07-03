@@ -6,7 +6,7 @@
   --color-secondary-container: #ffd54a;
   --color-surface: #f8fafc;
   --color-surface-container-low: #f1f5f9;
-  
+
   --font-body-md: "Plus Jakarta Sans", sans-serif;
   --font-label-sm: "Plus Jakarta Sans", sans-serif;
   --font-label-md: "Plus Jakarta Sans", sans-serif;
@@ -31,4 +31,8 @@
 /* Smooth scroll */
 html {
   scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 90px;
 }
