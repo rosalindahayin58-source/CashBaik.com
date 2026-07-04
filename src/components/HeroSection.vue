@@ -27,7 +27,9 @@
         <!-- Call to Action Buttons -->
         <div class="flex flex-wrap gap-4 mb-4">
           <a 
-            href="#" 
+            href="https://affiliate-app.esoftdream.co.id/" 
+            target="_blank"
+            rel="noopener"
             class="bg-[#ffd54a] hover:bg-yellow-500 text-[#0b1b66] font-bold px-8 py-3.5 rounded-2xl shadow-lg transition-all transform hover:-translate-y-0.5 active:translate-y-0"
           >
             Daftar Sekarang
