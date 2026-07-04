@@ -22,13 +22,13 @@
               href="https://play.google.com/store/apps/details?id=com.cashbaik.app&pcampaignid=web_share" 
               target="_blank"
               rel="noopener"
-              class="flex items-center gap-2.5 bg-black hover:bg-zinc-900 text-white px-5 py-2.5 rounded-xl border border-zinc-800 transition-all shadow-md"
+              class="inline-block transition-transform hover:scale-105 active:scale-95"
             >
-              <img src="/images/google-play-icon.png" alt="Google Play" class="w-6 h-6" />
-              <div class="text-left">
-                <p class="text-[9px] uppercase tracking-wider text-gray-400">GET IT ON</p>
-                <p class="text-xs font-bold -mt-0.5">Google Play</p>
-              </div>
+              <img 
+                src="/images/google-play-badge.svg" 
+                alt="Get it on Google Play" 
+                class="h-14 md:h-16 w-auto"
+              />
             </a>
           </div>
         </div>
