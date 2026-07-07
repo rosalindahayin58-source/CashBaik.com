@@ -2,18 +2,9 @@
   <section class="py-20 bg-[#f8fafc]" id="merchant">
     <div class="max-w-7xl mx-auto px-6 md:px-12">
       <!-- Section Header -->
-      <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-12">
-        <div>
-          <h2 class="text-3xl font-bold text-[#0b1b66] mb-2">Merchant Populer</h2>
-          <p class="text-gray-500 font-medium">Belanja di merchant favoritmu dan dapatkan cashback otomatis langsung masuk ke saldo CashBaik-mu.</p>
-        </div>
-        <a 
-          href="#" 
-          class="text-[#0b1b66] hover:text-blue-800 font-semibold text-sm flex items-center gap-1 mt-4 md:mt-0 transition-colors"
-        >
-          Lihat Semua Merchant
-          <span class="material-symbols-outlined text-sm font-bold">arrow_forward</span>
-        </a>
+      <div class="mb-12">
+        <h2 class="text-3xl font-bold text-[#0b1b66] mb-2">Merchant Populer</h2>
+        <p class="text-gray-500 font-medium">Belanja di merchant favoritmu dan dapatkan cashback otomatis langsung masuk ke saldo CashBaik-mu.</p>
       </div>
 
       <!-- Merchant Grid -->
