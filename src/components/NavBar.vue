@@ -4,6 +4,10 @@
 
       <!-- Logo -->
       <div class="flex items-center gap-2">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="32" height="32" rx="6" fill="#2539e6"/>
+          <path d="M14 11.5C14 11.5 19 11 19 16C19 21 27 19 27 19C27 19 25 28 17 28C9 28 11 22 11 22C11 22 6 20 11 18C14 17 14 11.5 14 11.5Z" fill="white"/>
+        </svg>
         <span class="font-bold text-2xl text-[#000666] tracking-tight">
           CashBaik
         </span>
