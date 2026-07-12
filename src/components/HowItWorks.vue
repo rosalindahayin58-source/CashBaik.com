@@ -19,7 +19,7 @@
       <!-- Steps Flow (Hover Effect) -->
       <div class="relative max-w-5xl mx-auto">
         <!-- Connecting Line Background (Desktop) -->
-        <div class="hidden md:block absolute top-[4.5rem] left-[15%] right-[15%] h-[2px] bg-gray-200 z-0"></div>
+        <div class="hidden md:block absolute top-[4.5rem] left-[15%] right-[15%] h-[2px] bg-[#2539e6]/20 z-0"></div>
         <!-- Connecting Line Hover Highlight (Desktop) -->
         <div
           class="hidden md:block absolute top-[4.5rem] left-[15%] h-[2px] bg-[#2539e6] z-0 transition-all duration-500 ease-in-out"
@@ -34,43 +34,26 @@
             @mouseenter="hoveredStep = step.id"
             @mouseleave="hoveredStep = null"
             :class="[
-              'rounded-3xl p-8 md:p-10 border flex flex-col items-center text-center cursor-default transition-all duration-300',
+              'rounded-3xl p-8 md:p-10 border bg-white flex flex-col items-center text-center cursor-default transition-all duration-300',
               hoveredStep === step.id
-                ? 'bg-white border-[#2539e6] shadow-xl shadow-blue-500/10 -translate-y-2 scale-105 ring-2 ring-[#2539e6]/20'
-                : hoveredStep !== null
-                  ? 'bg-white/60 border-gray-100 shadow-sm opacity-60 scale-100'
-                  : 'bg-white border-gray-100 shadow-sm scale-100 opacity-100'
+                ? 'border-[#2539e6] shadow-xl shadow-blue-500/10 -translate-y-2 scale-105 ring-2 ring-[#2539e6]/20'
+                : 'border-gray-100 shadow-sm'
             ]"
           >
-            <!-- Icon -->
-            <div
-              :class="[
-                'w-16 h-16 rounded-2xl flex items-center justify-center mb-8 transition-all duration-300',
-                hoveredStep === step.id
-                  ? 'bg-[#2539e6] text-white shadow-lg shadow-blue-500/40 scale-110'
-                  : 'bg-gray-100 text-gray-400 shadow-none scale-100'
-              ]"
+            <!-- Icon — always blue -->
+            <div class="w-16 h-16 bg-[#2539e6] text-white rounded-2xl flex items-center justify-center shadow-lg shadow-blue-500/30 mb-8 transition-transform duration-300"
+              :class="hoveredStep === step.id ? 'scale-110' : 'scale-100'"
             >
               <span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 0;">
                 {{ step.icon }}
               </span>
             </div>
-            <!-- Label -->
-            <div
-              :class="[
-                'text-xs font-black tracking-widest uppercase mb-3 transition-colors duration-300',
-                hoveredStep === step.id ? 'text-[#2539e6]' : 'text-gray-400'
-              ]"
-            >
+            <!-- Label — always blue -->
+            <div class="text-[#2539e6] text-xs font-black tracking-widest uppercase mb-3">
               Langkah {{ index + 1 }}
             </div>
             <!-- Title -->
-            <h3
-              :class="[
-                'text-xl font-bold mb-3 transition-colors duration-300',
-                hoveredStep === step.id ? 'text-[#2539e6]' : 'text-gray-900'
-              ]"
-            >
+            <h3 class="text-xl font-bold text-gray-900 mb-3">
               {{ step.title }}
             </h3>
             <!-- Description -->
