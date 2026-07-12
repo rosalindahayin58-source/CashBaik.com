@@ -7,8 +7,9 @@
           <div class="flex items-center gap-2 mb-4">
             <!-- Icon -->
             <svg width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M 4 0 H 16 A 16 16 0 0 1 32 16 A 16 16 0 0 1 16 32 H 4 A 4 4 0 0 1 0 28 V 4 A 4 4 0 0 1 4 0 Z" fill="#1d2de3"/>
-              <path d="M 11 20 C 8 21, 5 24, 5 27 C 9 27, 12 25, 13 22 C 15 14, 19 8, 25 6 C 25 12, 19 19, 11 20 Z" fill="white"/>
+              <path d="M 6 2 H 14 C 28 2, 28 15, 20 16 C 30 17, 30 30, 14 30 H 6 C 2 30, 2 26, 2 26 V 6 C 2 6, 2 2, 6 2 Z" fill="#1d2de3"/>
+              <path d="M 12 26 C 12 14, 18 8, 24 8 C 24 16, 18 26, 12 26 Z" fill="white"/>
+              <path d="M 12 26 C 12 20, 6 18, 4 20 C 4 24, 8 26, 12 26 Z" fill="white"/>
             </svg>
             <span class="font-bold text-2xl text-white tracking-tight">
               CashBaik
