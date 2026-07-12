@@ -6,10 +6,7 @@
         <div class="md:col-span-1">
           <div class="flex items-center gap-2 mb-4">
             <!-- Icon -->
-            <svg width="28" height="28" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M 4 0 H 16 C 28 0, 32 8, 26 16 C 32 24, 28 32, 16 32 H 4 C 1.8 32, 0 30.2, 0 28 V 4 C 0 1.8, 1.8 0, 4 0 Z" fill="#1d2de3"/>
-              <path d="M 12 26 C 4 26, 4 18, 4 14 C 10 14, 12 18, 14 20 C 16 10, 22 4, 28 4 C 28 14, 20 26, 12 26 Z" fill="white"/>
-            </svg>
+            <img src="/images/logo-icon.png" alt="CashBaik" class="w-7 h-7" />
             <span class="font-bold text-2xl text-white tracking-tight">
               CashBaik
             </span>
