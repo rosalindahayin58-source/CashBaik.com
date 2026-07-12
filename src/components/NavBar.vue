@@ -5,10 +5,11 @@
       <!-- Logo -->
       <div class="flex items-center gap-2">
         <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect width="32" height="32" rx="6" fill="#2539e6"/>
-          <path d="M14 11.5C14 11.5 19 11 19 16C19 21 27 19 27 19C27 19 25 28 17 28C9 28 11 22 11 22C11 22 6 20 11 18C14 17 14 11.5 14 11.5Z" fill="white"/>
+          <path d="M0 0 H16 A16 16 0 0 1 32 16 A16 16 0 0 1 16 32 H0 V0 Z" fill="#1d2de3"/>
+          <path d="M12 20 C 12 10, 22 6, 26 8 C 30 10, 20 22, 12 20 Z" fill="white"/>
+          <path d="M12 20 C 12 26, 6 28, 4 26 C 2 24, 8 20, 12 20 Z" fill="white"/>
         </svg>
-        <span class="font-bold text-2xl text-[#000666] tracking-tight">
+        <span class="font-bold text-2xl text-[#1d2de3] tracking-tight">
           CashBaik
         </span>
       </div>
