@@ -3,20 +3,12 @@
     <nav class="flex justify-between items-center px-6 md:px-12 py-4 max-w-7xl mx-auto">
 
       <!-- Logo -->
-      <div class="flex items-center gap-2">
-        <svg width="36" height="36" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <!-- Rounded square blue background -->
-          <rect width="100" height="100" rx="22" ry="22" fill="#1a2be8"/>
-          <!-- White leaf / B shape -->
-          <!-- Top lobe -->
-          <path d="M 28 18 C 28 18, 62 14, 68 34 C 74 54, 50 52, 50 52 C 50 52, 76 52, 72 72 C 68 88, 28 84, 28 84 Z" fill="white"/>
-          <!-- Leaf accent (inner cutout to form the B negative space) -->
-          <path d="M 36 28 L 36 47 C 36 47, 60 48, 58 36 C 56 24, 36 28, 36 28 Z" fill="#1a2be8"/>
-          <path d="M 36 52 L 36 74 C 36 74, 64 75, 62 63 C 60 51, 36 52, 36 52 Z" fill="#1a2be8"/>
-        </svg>
-        <span class="font-bold text-2xl text-[#1a2be8] tracking-tight">
-          CashBaik
-        </span>
+      <div class="flex items-center">
+        <img
+          src="/images/logo.jpg"
+          alt="CashBaik Logo"
+          class="h-9 w-auto object-contain"
+        />
       </div>
 
       <!-- Desktop Navigation -->

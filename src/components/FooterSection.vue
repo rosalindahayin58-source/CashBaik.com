@@ -4,20 +4,13 @@
       <div class="grid grid-cols-1 md:grid-cols-4 md:gap-8 gap-10 mb-12 border-b border-[#2a2c3a] pb-12">
         <!-- Brand column -->
         <div class="md:col-span-1">
-          <div class="flex items-center gap-2 mb-4">
-            <!-- Icon -->
-            <svg width="32" height="32" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <!-- Rounded square blue background -->
-              <rect width="100" height="100" rx="22" ry="22" fill="#1a2be8"/>
-              <!-- White B / leaf shape -->
-              <path d="M 28 18 C 28 18, 62 14, 68 34 C 74 54, 50 52, 50 52 C 50 52, 76 52, 72 72 C 68 88, 28 84, 28 84 Z" fill="white"/>
-              <!-- Inner cutouts to form B negative space -->
-              <path d="M 36 28 L 36 47 C 36 47, 60 48, 58 36 C 56 24, 36 28, 36 28 Z" fill="#1a2be8"/>
-              <path d="M 36 52 L 36 74 C 36 74, 64 75, 62 63 C 60 51, 36 52, 36 52 Z" fill="#1a2be8"/>
-            </svg>
-            <span class="font-bold text-2xl text-white tracking-tight">
-              CashBaik
-            </span>
+          <div class="flex items-center mb-4">
+            <!-- Logo -->
+            <img
+              src="/images/logo.jpg"
+              alt="CashBaik Logo"
+              class="h-8 w-auto object-contain brightness-0 invert"
+            />
           </div>
           <p class="text-[#a1a1aa] text-sm leading-relaxed max-w-xs">
             Aplikasi cashback & afiliasi marketplace Indonesia. Dapatkan Cashback setiap belanja online.
