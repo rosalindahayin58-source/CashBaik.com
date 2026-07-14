@@ -4,11 +4,17 @@
 
       <!-- Logo -->
       <div class="flex items-center gap-2">
-        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M 4 0 H 16 C 28 0, 32 8, 26 16 C 32 24, 28 32, 16 32 H 4 C 1.8 32, 0 30.2, 0 28 V 4 C 0 1.8, 1.8 0, 4 0 Z" fill="#1d2de3"/>
-          <path d="M 12 26 C 4 26, 4 18, 4 14 C 10 14, 12 18, 14 20 C 16 10, 22 4, 28 4 C 28 14, 20 26, 12 26 Z" fill="white"/>
+        <svg width="36" height="36" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Rounded square blue background -->
+          <rect width="100" height="100" rx="22" ry="22" fill="#1a2be8"/>
+          <!-- White leaf / B shape -->
+          <!-- Top lobe -->
+          <path d="M 28 18 C 28 18, 62 14, 68 34 C 74 54, 50 52, 50 52 C 50 52, 76 52, 72 72 C 68 88, 28 84, 28 84 Z" fill="white"/>
+          <!-- Leaf accent (inner cutout to form the B negative space) -->
+          <path d="M 36 28 L 36 47 C 36 47, 60 48, 58 36 C 56 24, 36 28, 36 28 Z" fill="#1a2be8"/>
+          <path d="M 36 52 L 36 74 C 36 74, 64 75, 62 63 C 60 51, 36 52, 36 52 Z" fill="#1a2be8"/>
         </svg>
-        <span class="font-bold text-2xl text-[#1d2de3] tracking-tight">
+        <span class="font-bold text-2xl text-[#1a2be8] tracking-tight">
           CashBaik
         </span>
       </div>
